@@ -140,3 +140,44 @@ h3{
     }
 }
 /*Nosotros*/
+.nosotros{
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(2, auto);
+}
+
+.nosotros__imagen{
+    grid-row: 1 / 2;
+    object-fit: cover;
+    width: 100%;
+}
+@media (min-width: 768px){
+    .nosotros{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .nosotros__imagen{
+        grid-column: 2 / 3;
+    }
+}
+/*.nosotros{
+    display: grid;
+    gap: 2rem;
+}
+.nosotros__imagen{
+    width: 100%;
+    object-fit: cover;
+}
+.nosotros__texto{
+    text-align: justify;
+}
+@media (min-width: 768px){
+   .nosotros{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    grid-template-columns: repeat(1, 2fr);
+   }
+}
+*/
